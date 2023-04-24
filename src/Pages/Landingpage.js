@@ -10,12 +10,24 @@ import Section5 from './Section5'
 const Landingpage = () => {
   return ( 
     <Box >
+    <Box>
       <Section1/> 
+      </Box>
+      <Box>
       <Section2/> 
+      </Box>
+      <Box>
       <Section3/>
+      </Box>
+      <Box>
       <Section4/>
+      </Box>
+      <Box>
       <Section5/>
-      <Section6/>  
+      </Box>
+      <Box>
+      <Section6/>
+      </Box>  
     </Box> 
   )
 }

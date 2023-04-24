@@ -42,7 +42,7 @@ const Section4 = () => {
        <center>
            <Image src={usertestimonial} h={50}/>
          </center>
-      <Stack  direction={'row'} p={14} justify={"space-between"} >
+      <Stack  direction={'row'} p={20} justify={"space-between"} >
       <Stack gap={2}>
         <Customcard image={image.img10} />
         <Customcard image={image.img2} />

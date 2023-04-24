@@ -22,7 +22,7 @@ const Landingpage = () => {
       <Box>
       <Section4/>
       </Box>
-      <Box>
+      <Box >
       <Section5/>
       </Box>
       <Box>

@@ -38,7 +38,7 @@ const Section4 = () => {
     <>
    {loader?
     <Box>
-      <Box>
+      <Box paddingTop={12}>
        <center>
            <Image src={usertestimonial} h={50}/>
          </center>

@@ -15,7 +15,7 @@ import {
   Skeleton
 } from '@chakra-ui/react';
 import { FaInstagram, FaTwitter, FaYoutube,FaFacebook } from 'react-icons/fa';
-import Custombutton from './Button';
+import Custombutton from '../Components/Button';
 import rozerpay from '../Asssets/rozerpay.png'
 import paytm from '../Asssets/paytm.png'
 import stripe from '../Asssets/stripe.png'

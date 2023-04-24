@@ -2,7 +2,7 @@ import React,{useState} from "react";
 import Circlerotate from "../Asssets/Circlerotate.png";
 import sun from "../Asssets/sun.png";
 import {Box,Stack,Image,Skeleton} from "@chakra-ui/react";
-import Customcard from "./Card";
+import Customcard from "../Components/Card";
 import "./Section4.css";
 import Health  from '../Asssets/Health.png'
 import Money from '../Asssets/Money.png'

@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import { Box, Center, Image ,Skeleton} from '@chakra-ui/react'
 import {Stack } from '@chakra-ui/react'
-import Visitingcards from './Visitingcards'
+import Visitingcards from '../Components/Visitingcards'
 import Astrologer1 from '../Asssets/Astrologer1.png'
 import Astrologer2 from '../Asssets/Astrologer2.png'
 import Astrologer3 from '../Asssets/Astrologer3.png'
@@ -29,6 +29,8 @@ const Section3 = () => {
   setTimeout(() => {
     setLoader(true)
   }, 12000);
+
+  
   return (
     <>
    {loader?
@@ -65,7 +67,6 @@ const Section3 = () => {
   <div>contents wrapped</div>
   <div>won't be visible</div>
 </Skeleton>}</>
-
   )
 }
 

@@ -2,8 +2,8 @@ import React, { Component,useState } from "react";
 import { Box, Center, Image, Skeleton,SkeletonCircle,SkeletonText } from "@chakra-ui/react";
 import vector from "../Asssets/Vector.png";
 import usertestimonial from "../Asssets/usertestimonial.png";
-import Carousel from "./Carousal";
-import Carousel2 from "./Carousal2";
+import Carousel from "../Components/Carousal";
+import Carousel2 from "../Components/Carousal2";
 
 
 

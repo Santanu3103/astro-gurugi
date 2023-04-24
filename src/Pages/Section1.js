@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import { Carousel } from "react-responsive-carousel";
 import { Box,Image, Center,Link,Flex ,Skeleton,SkeletonCircle,SkeletonText} from '@chakra-ui/react'
-import Navbar from './Navbar'
+import Navbar from '../Components/Navbar'
 import section1background from '../Asssets/section1background.png'
 import homepagetext from '../Asssets/homepagetext.png'
 import './section1.css'
@@ -10,7 +10,7 @@ import refund from '../Asssets/refund.png'
 import verifiedastrologer from '../Asssets/verifiedastrologer.png'
 import privecy from '../Asssets/privecy.png'
 import securepayment from '../Asssets/securepayment.png'
-import Custombutton from './Button';
+import Custombutton from '../Components/Button';
 const Section1 = () => {
   const [loader, setLoader] = useState(false);
     const slides = [

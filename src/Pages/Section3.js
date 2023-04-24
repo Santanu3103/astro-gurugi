@@ -25,17 +25,18 @@ const Section3 = () => {
     img7: Astrologer7,
     img9: Astrologer9   
   }
+
   
   setTimeout(() => {
     setLoader(true)
   }, 12000);
 
-  
+
   return (
     <>
    {loader?
     <Center>
-    <Box bgColor={'#FFEFE3'} w={1224}h={1490}>
+    <Box bgColor={'#FFEFE3'} w={1220}h={1450}>
     <Center>
     <Image src={Manyproblemonesolution} bgColor={'#FFEFE3'}/>
     </Center>

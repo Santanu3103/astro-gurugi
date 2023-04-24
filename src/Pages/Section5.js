@@ -1,168 +1,113 @@
-import React,{useState} from 'react';
-import Logo from '../Asssets/Logo.png'
-import {
-  Box,
-  Container,
-  Link,
-  SimpleGrid,
-  Stack,
-  Text,
-  Image,Input,
-  chakra,
-  VisuallyHidden,
-  Textarea,
-  useColorModeValue,
-  Skeleton
-} from '@chakra-ui/react';
-import { FaInstagram, FaTwitter, FaYoutube,FaFacebook } from 'react-icons/fa';
-import Custombutton from '../Components/Button';
-import rozerpay from '../Asssets/rozerpay.png'
-import paytm from '../Asssets/paytm.png'
-import stripe from '../Asssets/stripe.png'
+import { Avatar, Box, Stack, Text, useColorModeValue,Image,Card,Center } from '@chakra-ui/react';
+import userreview from '../Asssets/userreview.png'
+import Ratings from '../Asssets/Ratings.png'
+import testimony1 from '../Asssets/testimoy1.png'
+import testimony2 from '../Asssets/testimoy2.png'
+import testimony3 from '../Asssets/testimony3.png'
+import testimony4 from '../Asssets/testimony4.png'
+import testimony5 from '../Asssets/testimony5.png'
+import testimony6 from '../Asssets/testimony6.png'
+import testimony7 from '../Asssets/testimony7.png'
 
-const SocialButton = ({children,label,href,}) => {
-    return (
+export default function WithLargeQuote() {
+    const image ={
+        testimony1:testimony1,
+        testimony2:testimony2,
+        testimony3:testimony3,
+        testimony4:testimony4,
+        testimony5:testimony5,
+        testimony6:testimony6,
+        testimony7:testimony7, 
+    }
+  return (
+    <Center> 
+     <Box> 
+   
+    <Card w={1222} >
+    <Center> 
+    <Box>
+    <Image src={userreview}/>
+   
+    </Box>
+    </Center>
+    
+    <Stack
+      bg={useColorModeValue('gray.50', 'gray.800')}
+      py={16}
+      px={8}
+      spacing={{ base: 8, md: 10 }}
+      align={'center'}
+      direction={'column'}>
+      <Box>
+    <Image src={Ratings}/>
+    </Box> 
+      <Text
+        fontSize={{ base: 'xl', md: '2xl' }}
+        textAlign={'center'}
+        maxW={'3xl'}>
+        Explore the Mysteries of the Universe with Our Expert Astrology Services Explore the Mysteries of the Universe with Our Expert Astrology ServicesExplore the Mysteries of the Universe with 
+      </Text>
+      <Box textAlign={'center'} display={'flex'} >
+        <Image
+          src={testimony1}
+          alt={'Jenny Wilson'}
+          rounded={'full'} 
+          px={'2'} 
+          boxSize='80px'    
+        />
+         <Image
+          src={testimony2}
+          alt={'Jenny Wilson'}
+          rounded={'full'} 
+          px={'2'} 
+          boxSize='90px'    
+        />
+         <Image
+          src={testimony3}
+          alt={'Jenny Wilson'}
+          rounded={'full'}  
+          px={'2'}   
+          boxSize={'100PX'}      
+        />
+         <Image
+          src={testimony4}
+          alt={'Jenny Wilson'}
+          rounded={'full'}
+          px={'2'} 
+          boxSize={'130PX'}         
+        />
       
-      <chakra.button
-        bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
-        rounded={'full'}
-        w={8}
-        h={8}
-        cursor={'pointer'}
-        as={'a'}
-        href={href}
-        display={'inline-flex'}
-        alignItems={'center'}
-        justifyContent={'center'}
-        transition={'background 0.3s ease'}
-        _hover={{
-          bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
-        }}>
-        <VisuallyHidden>{label}</VisuallyHidden>
-        {children}
-      </chakra.button>
-    );
-  };
-  
-
-const ListHeader = ({ children }) => {
-  return (
-    <Text fontWeight={'500'} fontSize={'lg'} mb={2}>
-      {children}
-    </Text>
-  );
-};
-
-
-export default function Footer() {
-  const [loader, setLoader] = useState(false);
-
-  setTimeout(() => {
-
-    setLoader(true)
-  }, 12000);
-  return (
-    <>
-      {loader? 
-    <Box
-      bg='#BD5300'
-      color='#fff'>
-      <Container as={Stack} maxW={'6xl'} py={10}>
-        <SimpleGrid
-          templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr 1fr 1fr' }}
-          spacing={8}>
-          <Stack spacing={6}>
-            <Box>
-              <Image src={Logo}/>
-            </Box>
-            <Text fontSize={'sm'}>
-            About Guruji s2 to 3 lines what guruji do and how it works About Guruji s2 to 3 lines what guruji do and how it works
-            </Text>
-            <Stack direction={'row'} spacing={6}>
-              <SocialButton label={'Twitter'} href={'#'} >
-                <FaTwitter  />
-              </SocialButton>
-              <SocialButton label={'YouTube'} href={'#'} >
-                <FaYoutube color='#F44336'/>
-              </SocialButton>
-              <SocialButton label={'Instagram'} href={'#'}>
-                <FaInstagram />
-              </SocialButton>
-              <SocialButton label={'Fecebook'} href={'#'} >
-                <FaFacebook color='#1877F2' />
-              </SocialButton>
-            </Stack>
-            <Stack align={'flex-start'}>
-            <ListHeader>Trusted & Seal</ListHeader>
-            <Stack direction={'row'} spacing={6}>
-            <Image src={rozerpay}/>
-            <Image src={paytm}/>
-            </Stack>          
-            <Image src={stripe}/>
-          </Stack>
-          </Stack>
-          <Stack align={'flex-start'}>
-            <ListHeader>Company</ListHeader>
-            <Link href={'#'}>Home</Link>
-            <Link href={'#'}>Privacy</Link>
-            <Link href={'#'}>T &C</Link>
-            <Link href={'#'}>Varied Payment</Link>
-            <Link href={'#'}></Link>
-            <Link href={'#'}></Link>
-            <Link href={'#'}></Link>
-            <ListHeader>Collaborate</ListHeader>
-            <Link href={'#'}>Clever Tap</Link>
-            <Link href={'#'}>Exotel</Link>
-            <Link href={'#'}>Facebook</Link>
-            <Link href={'#'}>Quora</Link>
-            <Link href={'#'}>Google</Link>
-            <Link href={'#'}>Youtube</Link>
-          </Stack>
-          <Stack align={'flex-start'}>
-            <ListHeader>Company</ListHeader>
-            <Link href={'#'}>Home</Link>
-            <Link href={'#'}>Privacy</Link>
-            <Link href={'#'}>T &C</Link>
-            <Link href={'#'}>Varied Payment</Link>
-            <Link href={'#'}></Link>
-            <Link href={'#'}></Link>
-            <Link href={'#'}></Link>
-            <ListHeader>Important Link</ListHeader>
-            <Link href={'#'}>Tarot Reader</Link>
-            <Link href={'#'}>Vedic Astrology </Link>
-            <Link href={'#'}>Palmistry </Link>
-            <Link href={'#'}>Gemology</Link>
-            <Link href={'#'}>Vastu</Link>
-            <Link href={'#'}>Numerology</Link>
-          </Stack>
-          <Stack align={'flex-start'}>
-          <Input
-                placeholder='Your name'
-                bg='#fff'
-                color = '#fff'
-                border={0}
-                _focus={{
-                  bg: 'whiteAlpha.300',
-                }}
-                w={300}
-              />
-            <Input
-                placeholder='mail id'
-                bg='#fff'
-                color = '#fff'
-                border={0}
-                _focus={{
-                  bg: 'whiteAlpha.300',
-                }}
-              />
-            <Textarea  placeholder='Write query' bg='#fff' />
-            <Custombutton md={'md'} text={'Submit'} bg={'#4B9C0C'} />
-          </Stack>
-        </SimpleGrid>
-      </Container>
-    </Box>:<Skeleton>
-  <div>contents wrapped</div>
-  <div>won't be visible</div>
-</Skeleton>}</>
+         <Image
+          src={testimony5}
+          alt={'Jenny Wlson'}
+          rounded={'full'} 
+          px={'2'} 
+          boxSize={'100px'}         
+        />
+         <Image
+          src={testimony6}
+          alt={'Jenny Wilson'}
+          rounded={'full'} 
+          px={'2'}
+          boxSize={'90px'}          
+        />
+         <Image
+          src={testimony7}
+          alt={'Jenny Wilson'}
+          rounded={'full'}
+          px={'2'} 
+          boxSize={'80px'}          
+        />
+       </Box>
+       <Text
+        fontSize={{ base: 'xl', md: '2xl' }}
+        textAlign={'center'}
+        color={'orange'}>
+       Henry
+      </Text>
+      </Stack>
+     </Card>
+     </Box> 
+    </Center>
   );
 }

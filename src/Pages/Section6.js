@@ -61,7 +61,7 @@ export default function Footer() {
   setTimeout(() => {
 
     setLoader(true)
-  }, 12000);
+  }, 10000);
   return (
     <>
       {loader? 

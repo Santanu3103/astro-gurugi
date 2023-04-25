@@ -29,7 +29,7 @@ const Section3 = () => {
   
   setTimeout(() => {
     setLoader(true)
-  }, 12000);
+  }, 8000);
 
 
   return (

@@ -10,7 +10,7 @@ import { Center, Flex } from '@chakra-ui/react';
             style={{ backgroundImage: `url(${img})` }}> 
            <div className='topbar'>
               <p className=" ">10+ Years </p>
-              <p className="online">Online </p>
+              <p className="online">🟢 Online </p>
            </div>      
            <div className="submain grid-container">
             <p className="grid-item ">⭐4.5</p>

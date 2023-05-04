@@ -13,7 +13,7 @@ import { Center, Flex } from '@chakra-ui/react';
               <p className="online">Online </p>
            </div>      
            <div className="submain grid-container">
-            <p className="grid-item ">4.5</p>
+            <p className="grid-item ">⭐4.5</p>
             <p className="heading grid-item">Astrologer Ramraj</p>
             <p className="grid-item">Specialties</p>
             <p className="grid-item">Love, Business, Life </p>

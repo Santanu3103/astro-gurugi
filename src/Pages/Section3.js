@@ -41,8 +41,7 @@ const Section3 = () => {
     <Image src={Manyproblemonesolution} bgColor={'#FFEFE3'}/>
     </Center>
     <Center> 
-    <Stack direction={'row'} spacing='24px' bgColor={'#FFEFE3'} py={10}>
-   
+    <Stack direction={'row'} spacing='24px' bgColor={'#FFEFE3'} py={10}>   
     <Stack direction={'column'}  >
       <Visitingcards img={img.img7}/>
       <Visitingcards img={img.img1}/>
